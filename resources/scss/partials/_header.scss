@@ -59,7 +59,12 @@ header {
         }
     }
 
-
+    .jumbotron {
+        height: 350px;
+        background-image: url("/resources/img/jumbotron.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
 
 
