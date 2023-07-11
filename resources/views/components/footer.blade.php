@@ -194,7 +194,10 @@
         </div>
 
         <div id="right-down-footer">
-            <h2>FOLLOW US</h2>
+
+            <div>
+                <h2>FOLLOW US</h2>
+            </div>
 
             <div class="icons">
                 <div class="img-icon">

@@ -28,6 +28,7 @@ ul {
 
 #list-up-footer {
     @include flex-around;
+    height: 130px;
 }
 
 .li-up-footer {
@@ -97,14 +98,15 @@ ul {
         align-items: center;
 
         #right-down-footer {
-            display: flex;
             width: 30%;
+            height: 100px;
             @include flex-between-center;
             color: rgb(12, 124, 236);
 
             h2 {
                 font-size: 20px;
                 font-weight: bold;
+                margin-top: 10px;
             }
 
             .icons {
