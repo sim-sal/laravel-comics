@@ -22,11 +22,15 @@
 </head>
 
 <body>
+    {{-- header --}}
     @include('components.header')
 
     <div class="container">
         @yield('content')
     </div>
+
+    {{-- footer --}}
+    @include('components.footer')
 
 </body>
 

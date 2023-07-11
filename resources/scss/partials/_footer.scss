@@ -1,0 +1,110 @@
+// regole parte superiore
+#up-footer {
+    display: flex;
+    align-items: center;
+    height: 130px;
+    background-color: rgb(12, 124, 236);
+    color: white;
+}
+
+ul {
+    list-style: none;
+    font-size: 12px;
+
+    li {
+        margin-left: 20px;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        img {
+            width: 40px;
+            margin-right: 10px;
+        }
+    }
+}
+
+#list-up-footer {
+    @include flex-around;
+}
+
+.li-up-footer {
+    @include flex-between-center;
+}
+
+// regole parte centrale
+#central-footer {
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+#central-footer>.container {
+    @include flex-between-center;
+}
+
+#list-central-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+#list-central-footer>div>ul>li {
+    margin-left: 0px;
+}
+
+#list-central-footer>div>ul>li>a {
+    font-weight: lighter;
+    color: rgb(153, 153, 153);
+
+}
+
+#img-central-footer {
+    width: 40%;
+    height: 300px;
+    background-image: url('../assets/img/dc-logo-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+// regole parte inferiore
+#down-footer {
+    height: 100px;
+    background-color: rgb(48, 48, 48);
+
+    .container {
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        #right-down-footer {
+            display: flex;
+            width: 30%;
+            justify-content: space-between;
+            color: rgb(12, 124, 236);
+
+            .icons {
+                width: 60%;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+#my-button {
+    background-color: rgb(48, 48, 48);
+    border: 2px solid rgb(12, 124, 236);
+    color: white;
+    padding: 10px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgb(78, 78, 78);
+    }
+}
