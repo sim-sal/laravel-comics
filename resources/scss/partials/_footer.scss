@@ -37,39 +37,53 @@ ul {
 // regole parte centrale
 #central-footer {
     height: 300px;
+    background-image: url("/resources/img/footer-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
+
+    .container {
+        @include flex-between-center;
+
+        #list-central-footer {
+            display: flex;
+            justify-content: space-between;
+            width: 30%;
+
+            div {
+                ul {
+
+                    h2 {
+                        font-size: 15px;
+                        font-weight: bold;
+                    }
+
+                    li {
+                        margin-left: 0px;
+
+                        a {
+                            font-weight: lighter;
+                            color: rgb(153, 153, 153);
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #img-central-footer {
+        width: 40%;
+        height: 300px;
+        background-image: url("/resources/img/dc-logo-bg.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
 }
 
-#central-footer>.container {
-    @include flex-between-center;
-}
 
-#list-central-footer {
-    display: flex;
-    justify-content: space-between;
-    width: 30%;
-}
 
-#list-central-footer>div>ul>li {
-    margin-left: 0px;
-}
-
-#list-central-footer>div>ul>li>a {
-    font-weight: lighter;
-    color: rgb(153, 153, 153);
-
-}
-
-#img-central-footer {
-    width: 40%;
-    height: 300px;
-    background-image: url('../assets/img/dc-logo-bg.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
 
 // regole parte inferiore
 #down-footer {
@@ -85,13 +99,22 @@ ul {
         #right-down-footer {
             display: flex;
             width: 30%;
-            justify-content: space-between;
+            @include flex-between-center;
             color: rgb(12, 124, 236);
+
+            h2 {
+                font-size: 20px;
+                font-weight: bold;
+            }
 
             .icons {
                 width: 60%;
                 display: flex;
                 justify-content: space-between;
+
+                .img-icon {
+                    width: 30px;
+                }
             }
         }
     }
