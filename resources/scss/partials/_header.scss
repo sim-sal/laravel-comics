@@ -21,38 +21,47 @@ header {
     #header_container {
         @include flex-between-center;
         height: 100px;
-    }
 
-    #logo {
-        width: 70px
-    }
+        #logo {
+            width: 70px
+        }
 
-    ul {
-        @include flex-around;
-        list-style: none;
-        font-size: 12px;
+        nav {
+            ul {
+                @include flex-around;
+                list-style: none;
+                font-size: 12px;
 
-        li {
-            margin-left: 20px;
+                li {
+                    margin-left: 20px;
 
-            a {
-                text-decoration: none;
-                color: black;
-                font-weight: bold;
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+        #s {
+
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            border-bottom: 2px solid rgb(12, 124, 236);
+            max-width: 150px;
+
+
+            &::placeholder {
+                text-align: right;
             }
         }
     }
 
-    #s {
-
-        border-top: none;
-        border-right: none;
-        border-left: none;
-        border-bottom: 2px solid rgb(12, 124, 236);
 
 
-        &::placeholder {
-            text-align: right;
-        }
-    }
+
+
+
 }
