@@ -26,8 +26,11 @@
     @include('components.header')
 
     {{-- main --}}
-    @yield('content')
-
+    <main class="bg-dark">
+        <div class="container">
+            @yield('content')
+        </div>
+    </main>
 
     {{-- footer --}}
     @include('components.footer')
